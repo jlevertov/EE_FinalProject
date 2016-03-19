@@ -10,6 +10,7 @@ public class ToDoListItem {
 	@Id
 	@Column(name = "ID")
 	private int Id;
+	
 	@Column(name = "CATEGORY")
 	private String Category;
 	@Column(name = "TEXT")
@@ -65,5 +66,9 @@ public class ToDoListItem {
 	public void setCreationDate(Date creationDate) {
 		CreationDate = creationDate;
 	}
-	
+	@Override
+	public String toString() {
+		return "ToDoListItem [Id=" + Id + ", Category=" + Category + ", WhatToDo=" + WhatToDo + ", CreationDate="
+				+ CreationDate + "]";
+	}
 }
