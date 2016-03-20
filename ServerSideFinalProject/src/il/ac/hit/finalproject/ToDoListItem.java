@@ -13,8 +13,10 @@ public class ToDoListItem {
 	
 	@Column(name = "CATEGORY")
 	private String Category;
+	
 	@Column(name = "TEXT")
 	private String WhatToDo;
+	
 	@Column(name = "CREATION_TIME")
 	private Date CreationDate;
 	

@@ -9,13 +9,14 @@ import org.hibernate.cfg.AnnotationConfiguration;
 
 public class ToDoListDAO implements IToDoListDAO {
 	private SessionFactory factory;
-	Session session;
+	Session session = null;
+	
 	public ToDoListDAO() {
 		try{
 		factory = new AnnotationConfiguration().configure().buildSessionFactory();
 		}catch(Throwable ex)
 		{
-			throw new ExceptionInInitializerError();
+			ex.printStackTrace();
 		}
 	}
 	
@@ -40,7 +41,7 @@ public class ToDoListDAO implements IToDoListDAO {
 	}
 
 	@Override
-	public ToDoListItem[] GetItems() throws ToDoListPlatformException {
+	public void PrintItems() throws ToDoListPlatformException {
 		session = factory.openSession();
 		session.beginTransaction();
 		List ListItems = session.createQuery("from notes").list();
@@ -49,6 +50,9 @@ public class ToDoListDAO implements IToDoListDAO {
 		{
 			System.out.println(i.next());
 		}
+	}
+	public ToDoListItem[] GetItems()throws ToDoListPlatformException
+	{
 		return null;
 	}
 
