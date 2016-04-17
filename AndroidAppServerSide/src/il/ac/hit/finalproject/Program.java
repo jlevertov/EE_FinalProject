@@ -7,7 +7,7 @@ public class Program {
 	public static void main(String[] args) {
 		ToDoListItem item1 = new ToDoListItem("Test", "What house?", new Date(), new Date());
 		User item2 = new User(1, "Jalevertov", "BLAAAAAAAA", "jlevertov@walla.com", true);
-		IDAO dao = new DAO();
+		IDAO dao = DAO.GetInstance();
 		try {
 			//dao.AddListItem(item1);
 			//dao.AddUser(item2);

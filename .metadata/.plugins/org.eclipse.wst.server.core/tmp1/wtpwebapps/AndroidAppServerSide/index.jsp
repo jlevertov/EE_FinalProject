@@ -44,6 +44,7 @@
             for(var i=0; i <= toDoListItemList.length; i++)
             {
                 var place = document.getElementById("listPlace");
+                place.innerHTML = "";
                 var newhtml = "";
                 newhtml += "<div style='width:100%;background-color:dimgray;border-radius:20px;padding:5px'>";
                 newhtml += "<h2 class='textNegative'>" + toDoListItemList[i].Title + "</h2>";
@@ -63,6 +64,7 @@
 
 </head>
 <body>
+	<!-- @@@@@@@@@@@@@ LOGIN PAGE @@@@@@@@@@@@@@ -->
     <div data-role="page" id="LoginPage">
         <div data-role="header">
             <h1>To Do List App:</h1>
@@ -81,6 +83,7 @@
         </div>
     </div>
 
+    <!-- @@@@@@@@@@@@@ MAIN PAGE @@@@@@@@@@@@@@ -->
     <div data-role="page" id="MainPage">
         <div data-role="header">
             <h1>Welcome User</h1>
@@ -95,7 +98,7 @@
             <input type="search" id="searchBar" name="searchBar" id="search-basic" value="" placeholder="Search Memo's" />
 
             <div id="listPlace" style="width:100%;margin:auto;border-radius: 20px;">
-
+				
             </div>
 
         </div>
@@ -107,7 +110,7 @@
         </div>
     </div>
 
-
+	<!-- @@@@@@@@@@@@@ ADD ITEM PAGE @@@@@@@@@@@@@@ -->
     <div data-role="page" id="addMemo">
         <div data-role="header">
             <h1>Add a Memo</h1>
@@ -137,7 +140,7 @@
         </div>
     </div>
 <script>
-    ShowItems();
+   // ShowItems();
 </script>
 </body>
 </html>

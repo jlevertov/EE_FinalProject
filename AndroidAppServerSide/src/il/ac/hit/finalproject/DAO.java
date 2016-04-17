@@ -13,8 +13,19 @@ import org.hibernate.cfg.AnnotationConfiguration;
 public class DAO implements IDAO {
 	private SessionFactory factory;
 	Session session = null;
+	private static DAO instance = null;
 	
-	public DAO() {
+	public static DAO GetInstance()
+	{
+		if(instance == null)
+		{
+			instance = new DAO();
+		}
+		
+		return instance;
+	}
+	
+	private DAO() {
 		try{
 		factory = new AnnotationConfiguration().configure().buildSessionFactory();
 		}catch(Throwable ex)
@@ -72,7 +83,11 @@ public class DAO implements IDAO {
 	
 	public ToDoListItem[] GetItems()throws ToDoListPlatformException
 	{
-		return null;
+		session = factory.openSession();
+		session.beginTransaction();
+		List<ToDoListItem> ListItems = session.createQuery("from User").list();
+		ToDoListItem[] arrayToReturn = (ToDoListItem[]) ListItems.toArray();
+		return arrayToReturn;
 	}
 
 	@Override
