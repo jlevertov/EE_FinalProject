@@ -6,11 +6,11 @@ public class Program {
 	
 	public static void main(String[] args) {
 		ToDoListItem item1 = new ToDoListItem(1, "Regular", "What house?", new Date());
-		//ToDoListItem[] l = null;
-		IToDoListDAO dao = new ToDoListDAO();
+		User item2 = new User(1, "Jlevertov", "BLA", "jlevertov@walla.com", true);
+		IDAO dao = new DAO();
 		try {
 			dao.AddListItem(item1);
-			dao.PrintItems();
+			dao.AddUser(item2);
 		} catch (ToDoListPlatformException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

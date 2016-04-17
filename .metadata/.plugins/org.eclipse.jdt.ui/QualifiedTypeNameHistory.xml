@@ -5,4 +5,9 @@
 <fullyQualifiedTypeName name="il.ac.hit.finalproject.ToDoListItem"/>
 <fullyQualifiedTypeName name="org.hibernate.cfg.AnnotationConfiguration"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.hibernate.annotations.Entity"/>
+<fullyQualifiedTypeName name="il.ac.hit.finalproject.ToDoListPlatformException"/>
+<fullyQualifiedTypeName name="il.ac.hit.finalproject.IToDoListDAO"/>
+<fullyQualifiedTypeName name="il.ac.hit.finalproject.IUserDAO"/>
+<fullyQualifiedTypeName name="org.hibernate.Query"/>
 </qualifiedTypeNameHistroy>

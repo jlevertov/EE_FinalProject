@@ -1,0 +1,16 @@
+package il.ac.hit.finalproject;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "Users")
+public class User {
+
+	private String Username;
+	private String Password;
+	private String Email;
+	private boolean IsAdmin;
+	private int id;
+	
+	
+}

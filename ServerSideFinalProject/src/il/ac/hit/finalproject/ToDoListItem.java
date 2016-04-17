@@ -3,21 +3,19 @@ package il.ac.hit.finalproject;
 import java.util.Date;
 import javax.persistence.*;
 
-@Entity
-@Table(name = "Notes")
+
 public class ToDoListItem {
 
-	@Id
-	@Column(name = "ID")
+	
 	private int Id;
 	
-	@Column(name = "CATEGORY")
+	
 	private String Category;
 	
-	@Column(name = "TEXT")
+	
 	private String WhatToDo;
 	
-	@Column(name = "CREATION_TIME")
+	
 	private Date CreationDate;
 	
 	public ToDoListItem()
