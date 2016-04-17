@@ -1,0 +1,17 @@
+127.0.0.1 - - [17/Apr/2016:16:07:11 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [17/Apr/2016:16:07:12 +0200] "GET /AndroidAppServerSide/Index.jsp HTTP/1.1" 200 5699
+127.0.0.1 - - [17/Apr/2016:16:12:02 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [17/Apr/2016:16:12:03 +0200] "GET /AndroidAppServerSide/Home HTTP/1.1" 200 32
+0:0:0:0:0:0:0:1 - - [17/Apr/2016:16:14:04 +0200] "GET /AndroidAppServerSide/Index.jsp HTTP/1.1" 200 5682
+127.0.0.1 - - [17/Apr/2016:16:14:46 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [17/Apr/2016:16:14:47 +0200] "GET /AndroidAppServerSide/Home HTTP/1.1" 200 5682
+0:0:0:0:0:0:0:1 - - [17/Apr/2016:16:15:30 +0200] "GET /AndroidAppServerSide/Home HTTP/1.1" 200 5682
+0:0:0:0:0:0:0:1 - - [17/Apr/2016:16:15:36 +0200] "GET /AndroidAppServerSide/Home HTTP/1.1" 200 5682
+0:0:0:0:0:0:0:1 - - [17/Apr/2016:16:15:37 +0200] "GET /favicon.ico HTTP/1.1" 404 1016
+127.0.0.1 - - [17/Apr/2016:16:18:01 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [17/Apr/2016:16:18:03 +0200] "GET /AndroidAppServerSide/Home HTTP/1.1" 500 2694
+127.0.0.1 - - [17/Apr/2016:16:21:36 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [17/Apr/2016:16:21:37 +0200] "GET /AndroidAppServerSide/Login HTTP/1.1" 200 5687
+0:0:0:0:0:0:0:1 - - [17/Apr/2016:16:21:50 +0200] "GET /AndroidAppServerSide/Login HTTP/1.1" 200 5687
+0:0:0:0:0:0:0:1 - - [17/Apr/2016:16:22:43 +0200] "GET /AndroidAppServerSide/Login HTTP/1.1" 200 5687
+0:0:0:0:0:0:0:1 - - [17/Apr/2016:16:24:20 +0200] "GET /AndroidAppServerSide/Login HTTP/1.1" 200 5687
