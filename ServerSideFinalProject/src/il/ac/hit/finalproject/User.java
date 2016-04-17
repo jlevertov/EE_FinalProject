@@ -6,20 +6,19 @@ import javax.persistence.*;
 @Table(name = "Users")
 public class User {
 
-	@Id
-	@Column(name = "ID")
+	
 	private int id;
 	
-	@Column(name = "USERNAME")
+	
 	private String Username;
 	
-	@Column(name = "PASSWORD")
+	
 	private String Password;
 	
-	@Column(name = "EMAIL")
+	
 	private String Email;
 	
-	@Column(name = "ADMIN")
+	
 	private boolean IsAdmin;
 
 	public User(int id, String username, String password, String email, boolean isAdmin) {

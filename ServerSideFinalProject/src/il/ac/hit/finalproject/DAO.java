@@ -3,6 +3,7 @@ package il.ac.hit.finalproject;
 import java.util.List;
 import java.util.Iterator;
 
+import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -26,8 +27,13 @@ public class DAO implements IDAO {
 	public boolean AddListItem(ToDoListItem Item) throws ToDoListPlatformException {
 		session = factory.openSession();
 		session.beginTransaction();
+		try{
 		session.save(Item);
 		session.getTransaction().commit();
+		} catch(HibernateException e){
+			System.out.println(e.getMessage());
+			throw new ToDoListPlatformException();
+		}
 		session.close();
 		return true;
 	}

@@ -9,14 +9,13 @@ public class ToDoListItem {
 	
 	private int Id;
 	
-	
-	private String Category;
-	
+	private String Title;
 	
 	private String WhatToDo;
 	
-	
 	private Date CreationDate;
+	
+	private Date DeadLine;
 	
 	public ToDoListItem()
 	{
@@ -25,12 +24,12 @@ public class ToDoListItem {
 	
 	
 
-	public ToDoListItem(int id, String category, String whatToDo, Date creationDate) {
+	public ToDoListItem(String title, String whatToDo, Date creationDate, Date deadLine) {
 		super();
-		Id = id;
-		Category = category;
+		Title = title;
 		WhatToDo = whatToDo;
 		CreationDate = creationDate;
+		DeadLine = deadLine;
 	}
 
 
@@ -43,12 +42,12 @@ public class ToDoListItem {
 		Id = id;
 	}
 
-	public String getCategory() {
-		return Category;
+	public String getTitle() {
+		return Title;
 	}
 
-	public void setCategory(String category) {
-		Category = category;
+	public void setTitle(String category) {
+		Title = category;
 	}
 
 	public String getWhatToDo() {
@@ -68,7 +67,19 @@ public class ToDoListItem {
 	}
 	@Override
 	public String toString() {
-		return "ToDoListItem [Id=" + Id + ", Category=" + Category + ", WhatToDo=" + WhatToDo + ", CreationDate="
+		return "ToDoListItem [Id=" + Id + ", Category=" + Title + ", WhatToDo=" + WhatToDo + ", CreationDate="
 				+ CreationDate + "]";
+	}
+
+
+
+	public Date getDeadLine() {
+		return DeadLine;
+	}
+
+
+
+	public void setDeadLine(Date deadLine) {
+		DeadLine = deadLine;
 	}
 }

@@ -5,16 +5,18 @@ import java.util.Date;
 public class Program {
 	
 	public static void main(String[] args) {
-		ToDoListItem item1 = new ToDoListItem(1, "Regular", "What house?", new Date());
-		User item2 = new User(1, "Jlevertov", "BLA", "jlevertov@walla.com", true);
+		ToDoListItem item1 = new ToDoListItem("Test", "What house?", new Date(), new Date());
+		User item2 = new User(1, "Jalevertov", "BLAAAAAAAA", "jlevertov@walla.com", true);
 		IDAO dao = new DAO();
 		try {
 			dao.AddListItem(item1);
-			dao.AddUser(item2);
-		} catch (ToDoListPlatformException e) {
+			//dao.AddUser(item2);
+		}
+		catch (ToDoListPlatformException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 		
 		
 		

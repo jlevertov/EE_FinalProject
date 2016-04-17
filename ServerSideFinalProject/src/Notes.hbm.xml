@@ -7,14 +7,17 @@
 		<id name="Id" type="int" column="ID" >
 			<generator class="increment"/>
 		</id>
-		<property name="Category">
-			<column name="CATEGORY"/>
+		<property name="Title">
+			<column name="TITLE"/>
 		</property>
 		<property name="WhatToDo">
 			<column name="TEXT"/>
 		</property>
 		<property name="CreationDate">
 			<column name="CREATION_TIME"/>
+		</property>
+		<property name="DeadLine">
+			<column name="DEADLINE"/>
 		</property>
 	</class>
 </hibernate-mapping>
