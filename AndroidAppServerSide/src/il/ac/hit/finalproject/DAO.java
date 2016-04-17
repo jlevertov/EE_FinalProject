@@ -9,6 +9,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
 
+
 public class DAO implements IDAO {
 	private SessionFactory factory;
 	Session session = null;

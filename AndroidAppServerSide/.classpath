@@ -17,13 +17,12 @@
 	<classpathentry kind="lib" path="OtherJARS/commons-collections-3.1.jar"/>
 	<classpathentry kind="lib" path="OtherJARS/dom4j-1.6.1.jar"/>
 	<classpathentry kind="lib" path="OtherJARS/hibernate-jpa-2.0-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="OtherJARS/hibernate3.jar"/>
 	<classpathentry kind="lib" path="OtherJARS/javassist-3.9.0.GA.jar"/>
 	<classpathentry kind="lib" path="OtherJARS/jta-1.1.jar"/>
 	<classpathentry kind="lib" path="OtherJARS/log4j-1.2.16.jar"/>
 	<classpathentry kind="lib" path="OtherJARS/mysql-connector-java-5.1.13-bin.jar"/>
 	<classpathentry kind="lib" path="OtherJARS/slf4j-api-1.5.8.jar"/>
 	<classpathentry kind="lib" path="OtherJARS/slf4j-log4j12-1.5.6.jar"/>
-	<classpathentry kind="lib" path="OtherJARS/hibernate3.jar"/>
-	<classpathentry kind="lib" path="OtherJARS/hibernate-annotations-3.0beta1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
