@@ -10,7 +10,7 @@ public class Program {
 		IDAO dao = new DAO();
 		try {
 			dao.AddListItem(item1);
-			//dao.AddUser(item2);
+			dao.AddUser(item2);
 		}
 		catch (ToDoListPlatformException e) {
 			// TODO Auto-generated catch block
