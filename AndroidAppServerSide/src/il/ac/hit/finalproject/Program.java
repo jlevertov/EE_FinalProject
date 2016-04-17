@@ -9,8 +9,10 @@ public class Program {
 		User item2 = new User(1, "Jalevertov", "BLAAAAAAAA", "jlevertov@walla.com", true);
 		IDAO dao = new DAO();
 		try {
-			dao.AddListItem(item1);
-			dao.AddUser(item2);
+			//dao.AddListItem(item1);
+			//dao.AddUser(item2);
+			dao.PrintItems();
+			dao.PrintUsers();
 		}
 		catch (ToDoListPlatformException e) {
 			// TODO Auto-generated catch block

@@ -54,6 +54,11 @@
             }
         }
 
+        function OpenSearchTab()
+        {
+            document.getElementById("").style.visibility = "visible";
+        }
+
     </script>
 
 </head>
@@ -83,14 +88,19 @@
 
         <div data-role="main" class="ui-content">
             <div data-role="controlgroup" data-type="horizontal" >
-                <a href="#" class="ui-btn ui-icon-search ui-btn-icon-left" style="background-color:#ff944d;color:white;text-shadow:0 2px 0 #000000">Search</a>
-                <a href="#addMemo" class="ui-btn ui-icon-check ui-btn-icon-left ui-shadow ui-corner-all" style="background-color:#e65c00;color:white;text-shadow:0 2px 0 #000000">Add</a>
+                <a href="#addMemo" class="ui-btn ui-icon-check ui-btn-icon-left ui-shadow ui-corner-all" style="background-color:#e65c00;color:white;text-shadow:0 2px 0 #000000" data-transition="slide">Add</a>
                 <a href="#LoginPage" class="ui-btn ui-icon-delete ui-btn-icon-left" style="background-color:#e60000;color:white;text-shadow:0 2px 0 #000000" data-transition="slide" data-direction="reverse">Log Out</a>
             </div>
+
+            <input type="search" id="searchBar" name="searchBar" id="search-basic" value="" placeholder="Search Memo's" />
+
             <div id="listPlace" style="width:100%;margin:auto;border-radius: 20px;">
 
             </div>
+
         </div>
+
+
 
         <div data-role="footer">
             <h1>All Rights Reserved to J&R Inc.</h1>
@@ -106,8 +116,7 @@
         <div data-role="main" class="ui-content">
 
                 <div data-role="controlgroup" data-type="horizontal" >
-                    <a href="#" class="ui-btn ui-icon-search ui-btn-icon-left" style="background-color:#ff944d;color:white;text-shadow:0 2px 0 #000000">Search</a>
-                    <a href="#addMemo" class="ui-btn ui-icon-check ui-btn-icon-left ui-shadow ui-corner-all" style="background-color:#e65c00;color:white;text-shadow:0 2px 0 #000000">Add</a>
+                    <a href="#MainPage" class="ui-btn ui-icon-back ui-btn-icon-left" style="background-color:#e65c00;color:white;text-shadow:0 2px 0 #000000" data-transition="slide" data-direction="reverse">Return</a>
                     <a href="#LoginPage" class="ui-btn ui-icon-delete ui-btn-icon-left" style="background-color:#e60000;color:white;text-shadow:0 2px 0 #000000" data-transition="slide" data-direction="reverse">Log Out</a>
                 </div>
 
@@ -118,7 +127,6 @@
                 <label for="finalDate">Select Goal Date:</label>
                 <input type="date" name="finalDate" id="finalDate">
                 <input type="button" value="Add">
-                <a href="#MainPage" class="ui-btn" style="background-color:black;color:white;border-radius:5px;" data-transition="slide">Return</a>
 
             </form>
 

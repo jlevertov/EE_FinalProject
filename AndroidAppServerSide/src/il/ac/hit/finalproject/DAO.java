@@ -45,22 +45,31 @@ public class DAO implements IDAO {
 		ToDoListItem entity = new ToDoListItem();
 		entity.setId(ItemId);
 		session.delete(entity);
+		session.close();
 		return true;
 	}
 
 	@Override
 	public void PrintItems() throws ToDoListPlatformException {
 		session = factory.openSession();
+		try{
 		session.beginTransaction();
-		String hql = "FROM notes";
-		Query query = session.createQuery(hql);
-		List ListItems = query.list();
-		Iterator i = ListItems.iterator();
+		List items = session.createQuery("from ToDoListItem").list();
+		session.getTransaction().commit();
+		System.out.println("There are " + items.size() + " items");
+		Iterator i = items.iterator();
 		while(i.hasNext())
 		{
-			System.out.println(i.next().toString());
+			System.out.println(i.next());
 		}
+		}catch(HibernateException e)
+		{
+			System.out.println("EEEEEEEEEEEEEEEE" + e.getMessage());
+		}
+		session.close();
 	}
+	
+	
 	public ToDoListItem[] GetItems()throws ToDoListPlatformException
 	{
 		return null;
@@ -83,6 +92,7 @@ public class DAO implements IDAO {
 		User entity = new User();
 		entity.setId(userId);
 		session.delete(entity);
+		session.close();
 		return true;
 	}
 
@@ -95,12 +105,13 @@ public class DAO implements IDAO {
 	public void PrintUsers() throws ToDoListPlatformException {
 		session = factory.openSession();
 		session.beginTransaction();
-		List ListItems = session.createQuery("from notes").list();
+		List ListItems = session.createQuery("from User").list();
 		Iterator i = ListItems.iterator();
 		while(i.hasNext())
 		{
 			System.out.println(i.next());
 		}
+		session.close();
 	}
 
 }
