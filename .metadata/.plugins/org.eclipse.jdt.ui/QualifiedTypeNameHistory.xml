@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javassist.bytecode.Descriptor.Iterator"/>
 <fullyQualifiedTypeName name="org.hibernate.cfg.AnnotationConfiguration"/>
 <fullyQualifiedTypeName name="org.hibernate.annotations.Entity"/>
@@ -10,5 +9,8 @@
 <fullyQualifiedTypeName name="org.hibernate.Query"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.hibernate.HibernateException"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="il.ac.hit.finalproject.ToDoListItem"/>
 </qualifiedTypeNameHistroy>
